@@ -1,0 +1,6 @@
+dd if=/dev/zer of=./32MB.img bs=1M count=32
+mkfs -t ext4 ./32MB.img
+ls -l /sbin/mkfs.*
+cd /tmp/tmp; ls
+echo "Hello World" > ./hello.txt
+sudo unmount /mnt/tmp
